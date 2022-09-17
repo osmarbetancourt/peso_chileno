@@ -9,6 +9,9 @@ WORKDIR /app
 
 EXPOSE 5000:5000
 
+ARG api_currency_key_build
+ENV API_CURRENCY_KEY=${api_currency_key_build}
+
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
 
