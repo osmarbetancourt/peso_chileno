@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from main import obtiene_peso
 app = Flask(__name__)
 
